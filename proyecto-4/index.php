@@ -28,7 +28,7 @@
                   </form>
                 <?php
                     $date=date('y-m-d');
-                    $fecha_nacimiento=date_create($_GET['fecha']);
+                    $fecha_nacimiento=date_create(@$_GET['fecha']);
                     $fecha_actual=date_create($date);
                     $diferencia1=date_diff($fecha_actual,$fecha_nacimiento);
                 ?>

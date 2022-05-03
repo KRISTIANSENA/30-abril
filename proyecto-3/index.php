@@ -30,8 +30,8 @@
                       </div>
                   </form>
                 <?php 
-                    $fecha1=date_create($_GET ['fecha-1']);
-                    $fecha2=date_create($_GET ['fecha-2']);
+                    $fecha1=date_create(@$_GET ['fecha-1']);
+                    $fecha2=date_create(@$_GET ['fecha-2']);
                     $diferencia=date_diff($fecha1,$fecha2);
                 ?>
                   <div class="alert alert-success">
